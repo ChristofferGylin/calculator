@@ -1,9 +1,6 @@
 const addNumber = (e, displayNumber, newNumber, setNewNumber, setDisplayNumber) => {
 
-    console.log('e:', e)
-    console.log('displayNumber:', displayNumber)
-    console.log('setDisplayNumber:', setDisplayNumber)
-
+    console.log(e.target.innerHTML)
     if (newNumber) {
 
         if (e.target.innerHTML !== '0') {
@@ -13,8 +10,6 @@ const addNumber = (e, displayNumber, newNumber, setNewNumber, setDisplayNumber) 
 
         }
 
-
-
     } else {
 
         if (displayNumber.length < 17) {
@@ -22,7 +17,6 @@ const addNumber = (e, displayNumber, newNumber, setNewNumber, setDisplayNumber) 
             setDisplayNumber(displayNumber + e.target.innerHTML)
 
         }
-
     }
 }
 
